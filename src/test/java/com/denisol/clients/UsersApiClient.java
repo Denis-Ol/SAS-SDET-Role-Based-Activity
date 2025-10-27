@@ -21,6 +21,7 @@ public class UsersApiClient {
         Response response = given()
                 .header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.0.0 Safari/537.36")
                 .header("Accept", "application/json")
+                .header("Cache-Control", "no-cache")
                 .when()
                 .get("/users");
         return logAndExtractResponse(response);
