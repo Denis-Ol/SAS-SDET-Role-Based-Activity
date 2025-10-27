@@ -1,4 +1,4 @@
-# Test Plan: "Users" REST API
+# Test Plan: "Users" REST API 
 
 ## 1. Introduction & Objective
 
