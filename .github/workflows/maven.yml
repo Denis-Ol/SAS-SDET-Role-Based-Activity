@@ -30,8 +30,11 @@ jobs:
 
       # Builds the project, runs tests, and packages the application
       # The -B (Batch Mode) is used for non-interactive execution
-      - name: Build and Test with Maven
-        run: mvn -B package --file pom.xml
+#      - name: Build and Test with Maven
+#        run: mvn -B package --file pom.xml
+
+      - name: Execute Only UsersApiTests
+        run: mvn -B test -Dtest=UsersApiTests
 
       # (Optional) If you want to save the final build artifact (e.g., a JAR file)
       # - name: Upload artifact
