@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Users Array Schema",
+  "type": "array",
+  "items": {
+    "title": "User",
+    "description": "Defines the structure of a single user object.",
+    "type": "object",
+    "properties": {
+      "id": {
+        "description": "The unique identifier for the user.",
+        "type": "integer"
+      },
+      "email": {
+        "description": "The user's email address.",
+        "type": "string",
+        "format": "email"
+      },
+      "username": {
+        "description": "The user's unique login name.",
+        "type": "string"
+      },
+      "password": {
+        "description": "The user's password (hashed or plain, as per API spec).",
+        "type": "string"
+      }
+    },
+    "required": [
+      "id",
+      "email",
+      "username",
+      "password"
+    ]
+  }
+}

@@ -1,3 +1,0 @@
-# SAS SDET Users API Testing
-
-This repository contains the deliverables for the SDET role-based activity...
